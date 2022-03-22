@@ -1,0 +1,109 @@
+.managements{
+    background-color: white;
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+        .management__info{
+            text-align: center;
+            h1{
+                margin: 2rem 0;
+                font-size: 3rem;
+                font-weight: 600;
+            }
+            p{
+                line-height: 1.7;
+            }
+        }
+        .management__container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 3rem;
+            .management{
+                border-radius: 15px;
+                border: 1px solid transparent;
+                box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.25);
+                text-align: center;
+                padding: 2rem;
+                transition: all 0.4s;
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 15px;
+                }
+                
+                .icon{
+                    i{
+                        font-size: 5rem;
+                        padding: 1rem;
+                    }
+                }
+            
+               
+                h2{
+                    
+                    font-weight: bolder;
+                    color: rgba(0, 0, 0, 0.616);
+                    font-size: 2rem;
+
+                }
+                p{
+                    margin: 2rem 0;
+                    line-height: 1.5;
+                }
+                a{
+                    margin-bottom: 1rem;
+                }
+               &:hover{
+                   transform: scale(1.05);
+
+               }
+            }
+          
+            
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .managements{
+        .container{
+            .management__info{
+                text-align: center;
+                h1{
+                    margin: 2rem 0;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                p{
+                    line-height: 1.4;
+                }
+            }
+            .management__container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+                .management{
+                  
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .managements{
+        .container{
+            .management__container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+                .management{
+                  
+            }
+        }
+    }
+    
+}
